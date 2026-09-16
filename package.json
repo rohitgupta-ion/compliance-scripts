@@ -1,0 +1,22 @@
+{
+  "name": "compliance-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc",
+    "read-s3-gzip": "ts-node src/read-s3-gzip-objects.ts",
+    "count-customer-events": "ts-node src/count-customer-events.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1114.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "5.9.3"
+  }
+}
