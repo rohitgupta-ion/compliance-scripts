@@ -8,8 +8,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "read-s3-gzip": "ts-node src/read-s3-gzip-objects.ts",
-    "count-customer-events": "ts-node src/count-customer-events.ts"
+    "read-failed-firehose-events": "ts-node src/read-failed-firehose-events.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.1114.0"
